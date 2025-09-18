@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+/* Daun */
+@keyframes floatSlow {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(5deg);
+  }
+}
+@keyframes floatMedium {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
+}
+@keyframes floatFast {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(8deg);
+  }
+}
+.animate-float-slow {
+  animation: floatSlow 8s ease-in-out infinite;
+}
+.animate-float-medium {
+  animation: floatMedium 6s ease-in-out infinite;
+}
+.animate-float-fast {
+  animation: floatFast 5s ease-in-out infinite;
+}
+
+/* Animasi Box & Sachet */
+@keyframes boxFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-10deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-8deg);
+  }
+}
+@keyframes sachetFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(5deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(7deg);
+  }
+}
+.animate-boxFloat {
+  animation: boxFloat 5s ease-in-out infinite;
+}
+.animate-sachetFloat {
+  animation: sachetFloat 5s ease-in-out infinite;
+}
